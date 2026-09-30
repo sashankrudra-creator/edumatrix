@@ -36,6 +36,25 @@
   --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.dark {
+  --background: #121212;
+  --primary: #FF4D94; /* Brighter version of #660033 for contrast */
+  --primary-dark: #E6005C;
+  --primary-light: #2A111F;
+  
+  --text-primary: #F2F2F2;
+  --text-secondary: #B3B3B3;
+  
+  --surface: #1E1E1E;
+  --surface-soft: #252525;
+  
+  --border: #333333;
+  --white: #121212;
+  
+  --shadow-subtle: 0 8px 30px rgba(0, 0, 0, 0.2);
+  --shadow-hover: 0 12px 36px rgba(255, 77, 148, 0.15);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -169,6 +188,11 @@ header.scrolled {
 
 .logo span {
   color: var(--primary);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -539,8 +563,10 @@ footer {
     height: 100vh;
     background: var(--background);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     opacity: 0;
     pointer-events: none;
     transition: var(--transition-smooth);

@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Bot, Plane, Network, Telescope, Printer, Glasses, ArrowRight, Cpu, FlaskConical, Settings, Microscope, Atom, BrainCircuit, Rocket, Lightbulb, CircuitBoard } from 'lucide-react';
-import { StemBackground } from '../components/Backgrounds';
 import { BlurText, FadeContent, ScaleIn } from '../components/Animations';
 import { Link } from 'react-router-dom';
 
@@ -12,34 +11,33 @@ export default function Stem() {
   return (
     <>
       <section className="hero" style={{ minHeight: '60vh', paddingBottom: '2rem', position: 'relative', overflow: 'hidden' }}>
-          <StemBackground />
           <div className="hidden-mobile">
               {/* Left Side Cluster */}
-              <div style={{ position: 'absolute', left: '2%', top: '25%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <Bot size={90} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '2%', top: '25%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <Bot size={90} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', left: '14%', top: '45%', opacity: 0.15, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <Settings size={60} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '14%', top: '45%', opacity: 0.3, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <Settings size={60} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', left: '3%', top: '65%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <Microscope size={90} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '3%', top: '65%', opacity: 0.2, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <Microscope size={90} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', left: '15%', top: '85%', opacity: 0.15, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <Atom size={110} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '15%', top: '85%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <Atom size={110} strokeWidth={2} />
               </div>
 
               {/* Right Side Cluster */}
-              <div style={{ position: 'absolute', right: '3%', top: '25%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <BrainCircuit size={100} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '3%', top: '25%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <BrainCircuit size={100} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', right: '14%', top: '45%', opacity: 0.15, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <Rocket size={70} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '14%', top: '45%', opacity: 0.3, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <Rocket size={70} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', right: '2%', top: '65%', opacity: 0.1, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <CircuitBoard size={110} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '2%', top: '65%', opacity: 0.2, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <CircuitBoard size={110} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', right: '15%', top: '85%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <Telescope size={90} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '15%', top: '85%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <Telescope size={90} strokeWidth={2} />
               </div>
           </div>
 

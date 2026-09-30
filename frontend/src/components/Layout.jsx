@@ -1,12 +1,29 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, MapPin, Mail, Phone } from 'lucide-react';
+import { Menu, X, MapPin, Mail, Phone, Sun, Moon } from 'lucide-react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 export default function Layout({ children }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+
+  // Dark mode state
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem('edumatrix-theme');
+    if (saved) return saved === 'dark';
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('edumatrix-theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('edumatrix-theme', 'light');
+    }
+  }, [isDarkMode]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,7 +60,10 @@ export default function Layout({ children }) {
       <header id="main-header" className={scrolled ? 'scrolled' : ''}>
           <div className="container nav-container">
               <div className="logo">
-                  <Link to="/">EDU<span>MATRIX</span></Link>
+                  <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0px' }}>
+                      <img src="/logo.png" alt="E" style={{ height: '64px', marginRight: '-16px', marginTop: '-2px' }} />
+                      <span>DU<span>MATRIX</span></span>
+                  </Link>
               </div>
               
               <button 
@@ -61,6 +81,15 @@ export default function Layout({ children }) {
                       <li><Link to="/academics" className={location.pathname === '/academics' ? 'active' : ''}>Academics & Testing</Link></li>
                       <li><Link to="/schools" className={location.pathname === '/schools' ? 'active' : ''}>Institutional B2B</Link></li>
                   </ul>
+                  
+                  <button 
+                    onClick={() => setIsDarkMode(!isDarkMode)} 
+                    className="theme-toggle-btn"
+                    aria-label="Toggle theme"
+                    style={{ background: 'transparent', border: 'none', color: 'var(--text-primary)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.5rem', borderRadius: '50%', marginLeft: '1rem' }}
+                  >
+                    {isDarkMode ? <Sun size={22} /> : <Moon size={22} />}
+                  </button>
               </nav>
           </div>
       </header>
@@ -73,8 +102,9 @@ export default function Layout({ children }) {
           <div className="container">
               <div className="footer-grid">
                   <div className="footer-col">
-                      <div className="logo" style={{marginBottom: '1.5rem'}}>
-                          EDU<span>MATRIX</span>
+                      <div className="logo" style={{marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0px'}}>
+                          <img src="/logo.png" alt="E" style={{ height: '64px', marginRight: '-16px', marginTop: '-2px' }} />
+                          <span>DU<span>MATRIX</span></span>
                       </div>
                       <p>Building the educational infrastructure of tomorrow with cutting-edge STEM and proven academic rigour.</p>
                       <div className="social-links">

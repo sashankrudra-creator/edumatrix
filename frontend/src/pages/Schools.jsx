@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Monitor, Users, Presentation, LayoutDashboard, Flag, ArrowRight, Building2, Briefcase, School, Library, GraduationCap, ClipboardCheck, Laptop, FolderOpen, Settings } from 'lucide-react';
-import { SchoolsBackground } from '../components/Backgrounds';
 import { BlurText, FadeContent, ScaleIn } from '../components/Animations';
 import { Link } from 'react-router-dom';
 
@@ -12,41 +11,40 @@ export default function Schools() {
   return (
     <>
       <section className="hero" style={{ minHeight: '60vh', paddingBottom: '2rem', position: 'relative', overflow: 'hidden' }}>
-          <SchoolsBackground />
           
           <div className="hidden-mobile">
               {/* Left Side Cluster */}
-              <div style={{ position: 'absolute', left: '2%', top: '22%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <School size={90} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '2%', top: '22%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <School size={90} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', left: '14%', top: '38%', opacity: 0.15, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <Presentation size={60} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '14%', top: '38%', opacity: 0.3, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <Presentation size={60} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', left: '3%', top: '55%', opacity: 0.1, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <Library size={80} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '3%', top: '55%', opacity: 0.2, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <Library size={80} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', left: '15%', top: '72%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <GraduationCap size={90} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '15%', top: '72%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <GraduationCap size={90} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', left: '4%', top: '88%', opacity: 0.15, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <ClipboardCheck size={70} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '4%', top: '88%', opacity: 0.3, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <ClipboardCheck size={70} strokeWidth={2} />
               </div>
 
               {/* Right Side Cluster */}
-              <div style={{ position: 'absolute', right: '3%', top: '22%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <LayoutDashboard size={100} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '3%', top: '22%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <LayoutDashboard size={100} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', right: '14%', top: '38%', opacity: 0.15, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <Laptop size={70} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '14%', top: '38%', opacity: 0.3, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <Laptop size={70} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', right: '2%', top: '55%', opacity: 0.1, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <FolderOpen size={80} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '2%', top: '55%', opacity: 0.2, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <FolderOpen size={80} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', right: '15%', top: '72%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <Users size={90} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '15%', top: '72%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <Users size={90} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', right: '4%', top: '88%', opacity: 0.15, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <Settings size={80} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '4%', top: '88%', opacity: 0.3, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <Settings size={80} strokeWidth={2} />
               </div>
           </div>
 

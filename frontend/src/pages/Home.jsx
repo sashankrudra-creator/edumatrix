@@ -8,24 +8,24 @@ export default function Home() {
       <section className="hero" id="home" style={{ position: 'relative', overflow: 'hidden' }}>
           <div className="hidden-mobile">
               {/* Left Side Cluster */}
-              <div style={{ position: 'absolute', left: '4%', top: '25%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-1">
+              <div style={{ position: 'absolute', left: '4%', top: '25%', opacity: 0.12, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
                   <BookOpen size={100} strokeWidth={1.5} />
               </div>
-              <div style={{ position: 'absolute', left: '12%', top: '55%', opacity: 0.15, color: '#660033', pointerEvents: 'none' }} className="float-2">
+              <div style={{ position: 'absolute', left: '12%', top: '55%', opacity: 0.15, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
                   <GraduationCap size={80} strokeWidth={1.5} />
               </div>
-              <div style={{ position: 'absolute', left: '2%', top: '85%', opacity: 0.1, color: '#660033', pointerEvents: 'none' }} className="float-1">
+              <div style={{ position: 'absolute', left: '2%', top: '85%', opacity: 0.1, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
                   <BrainCircuit size={90} strokeWidth={1.5} />
               </div>
 
               {/* Right Side Cluster */}
-              <div style={{ position: 'absolute', right: '4%', top: '25%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-2">
+              <div style={{ position: 'absolute', right: '4%', top: '25%', opacity: 0.12, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
                   <Lightbulb size={90} strokeWidth={1.5} />
               </div>
-              <div style={{ position: 'absolute', right: '12%', top: '55%', opacity: 0.15, color: '#660033', pointerEvents: 'none' }} className="float-1">
+              <div style={{ position: 'absolute', right: '12%', top: '55%', opacity: 0.15, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
                   <Trophy size={80} strokeWidth={1.5} />
               </div>
-              <div style={{ position: 'absolute', right: '2%', top: '85%', opacity: 0.1, color: '#660033', pointerEvents: 'none' }} className="float-2">
+              <div style={{ position: 'absolute', right: '2%', top: '85%', opacity: 0.1, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
                   <Rocket size={100} strokeWidth={1.5} />
               </div>
           </div>

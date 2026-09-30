@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Target, BarChart2, Award, MessageSquare, Calculator, Users, Lightbulb, Gamepad2, ArrowRight, Trophy, GraduationCap, BookOpen, Pencil, CheckCircle, Star, ClipboardList, BarChart3, Medal, Sparkles } from 'lucide-react';
-import { AcademicsBackground } from '../components/Backgrounds';
 import { BlurText, FadeContent, ScaleIn } from '../components/Animations';
 import { Link } from 'react-router-dom';
 
@@ -12,35 +11,34 @@ export default function Academics() {
   return (
     <>
       <section className="hero" style={{ minHeight: '60vh', paddingBottom: '2rem', position: 'relative', overflow: 'hidden' }}>
-          <AcademicsBackground />
           
           <div className="hidden-mobile">
               {/* Left Side Cluster */}
-              <div style={{ position: 'absolute', left: '2%', top: '25%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <Trophy size={90} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '2%', top: '25%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <Trophy size={90} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', left: '14%', top: '45%', opacity: 0.15, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <BookOpen size={60} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '14%', top: '45%', opacity: 0.3, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <BookOpen size={60} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', left: '3%', top: '65%', opacity: 0.1, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <Pencil size={80} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '3%', top: '65%', opacity: 0.2, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <Pencil size={80} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', left: '15%', top: '85%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <CheckCircle size={90} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', left: '15%', top: '85%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <CheckCircle size={90} strokeWidth={2} />
               </div>
 
               {/* Right Side Cluster */}
-              <div style={{ position: 'absolute', right: '3%', top: '25%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <GraduationCap size={100} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '3%', top: '25%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <GraduationCap size={100} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', right: '14%', top: '45%', opacity: 0.15, color: '#660033', pointerEvents: 'none' }} className="float-1">
-                  <ClipboardList size={70} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '14%', top: '45%', opacity: 0.3, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
+                  <ClipboardList size={70} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', right: '2%', top: '65%', opacity: 0.1, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <BarChart3 size={110} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '2%', top: '65%', opacity: 0.2, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <BarChart3 size={110} strokeWidth={2} />
               </div>
-              <div style={{ position: 'absolute', right: '15%', top: '85%', opacity: 0.12, color: '#660033', pointerEvents: 'none' }} className="float-2">
-                  <Medal size={90} strokeWidth={1.5} />
+              <div style={{ position: 'absolute', right: '15%', top: '85%', opacity: 0.25, color: 'var(--primary)', pointerEvents: 'none' }} className="float-2">
+                  <Medal size={90} strokeWidth={2} />
               </div>
           </div>
 
