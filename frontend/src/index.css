@@ -1152,22 +1152,22 @@ footer {
   }
   
   .edumatrix-signature-content {
-    flex-direction: column;
-    align-items: center;
-    line-height: 0.9;
+    flex-direction: row;
+    align-items: baseline;
+    line-height: 0.8;
   }
   
   .edumatrix-signature-logo {
-    height: 120px;
-    margin-right: 0;
-    margin-bottom: -10px;
-    transform: none;
+    height: 14vw;
+    margin-right: -3vw;
+    margin-bottom: 0;
+    transform: translateY(3vw);
   }
   
   .edumatrix-signature-text {
-    font-size: 14vw;
-    transform: none;
-    letter-spacing: -0.02em;
+    font-size: 9.5vw;
+    transform: translateY(0.5vw);
+    letter-spacing: -0.04em;
   }
 }
 
