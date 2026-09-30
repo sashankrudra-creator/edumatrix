@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom';
 import { Microscope, BookOpen, BrainCircuit, Building2, ArrowRight, Lightbulb, Trophy, Rocket, GraduationCap } from 'lucide-react';
 import { BlurText, FadeContent, ScaleIn } from '../components/Animations';
+import AnnouncementTicker from '../components/AnnouncementTicker';
+import WhyEdumatrix from '../components/WhyEdumatrix';
 
 export default function Home() {
   return (
     <>
-      <section className="hero" id="home" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div style={{ paddingTop: '100px', backgroundColor: 'var(--background)' }}>
+        <AnnouncementTicker />
+      </div>
+      <section className="hero" id="home" style={{ position: 'relative', overflow: 'hidden', paddingTop: '2rem' }}>
           <div className="hidden-mobile">
               {/* Left Side Cluster */}
               <div style={{ position: 'absolute', left: '4%', top: '25%', opacity: 0.12, color: 'var(--primary)', pointerEvents: 'none' }} className="float-1">
@@ -144,6 +149,8 @@ export default function Home() {
               </div>
           </div>
       </section>
+
+      <WhyEdumatrix />
     </>
   );
 }

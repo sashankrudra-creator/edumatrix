@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MapPin, Mail, Phone, Sun, Moon } from 'lucide-react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import EdumatrixSignature from './EdumatrixSignature';
 
 export default function Layout({ children }) {
   const [scrolled, setScrolled] = useState(false);
@@ -100,12 +101,9 @@ export default function Layout({ children }) {
 
       <footer>
           <div className="container">
-              <div className="footer-grid">
+              <div className="footer-grid-new">
                   <div className="footer-col">
-                      <div className="logo" style={{marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0px'}}>
-                          <img src="/logo.png" alt="E" style={{ height: '64px', marginRight: '-16px', marginTop: '-2px' }} />
-                          <span>DU<span>MATRIX</span></span>
-                      </div>
+                      <h4>Edumatrix</h4>
                       <p>Building the educational infrastructure of tomorrow with cutting-edge STEM and proven academic rigour.</p>
                       <div className="social-links">
                           <Link to="#" aria-label="Facebook" className="social-fb"><FaFacebook size={22} /></Link>
@@ -116,19 +114,27 @@ export default function Layout({ children }) {
                       </div>
                   </div>
                   <div className="footer-col">
-                      <h4>Quick Links</h4>
+                      <h4>Navigation</h4>
                       <ul>
-                          <li><Link to="/stem">STEM Labs</Link></li>
-                          <li><Link to="/academics">Academics</Link></li>
-                          <li><Link to="/schools">For Schools</Link></li>
+                          <li><Link to="/">Home</Link></li>
+                          <li><Link to="/stem">STEM & Innovation</Link></li>
+                          <li><Link to="/academics">Academics & Testing</Link></li>
+                          <li><Link to="/schools">Institutional B2B</Link></li>
                       </ul>
                   </div>
                   <div className="footer-col">
-                      <h4>Contact Us</h4>
-                      <ul className="contact-info">
-                          <li><MapPin size={18} /> Hyderabad, Telangana</li>
-                          <li><Mail size={18} /> info@edumatrix.com</li>
-                          <li><Phone size={18} /> +91 98765 43210</li>
+                      <h4>Learning</h4>
+                      <ul>
+                          <li><Link to="#">Programs</Link></li>
+                          <li><Link to="#">Workshops</Link></li>
+                          <li><Link to="#">Resources</Link></li>
+                      </ul>
+                  </div>
+                  <div className="footer-col">
+                      <h4>Company</h4>
+                      <ul>
+                          <li><Link to="#">About</Link></li>
+                          <li><Link to="#">Contact</Link></li>
                       </ul>
                   </div>
               </div>
@@ -136,6 +142,7 @@ export default function Layout({ children }) {
                   &copy; 2026 Edumatrix. All rights reserved.
               </div>
           </div>
+          <EdumatrixSignature />
       </footer>
     </>
   );

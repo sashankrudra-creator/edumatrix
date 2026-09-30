@@ -4,19 +4,23 @@ import Home from './pages/Home';
 import Stem from './pages/Stem';
 import Academics from './pages/Academics';
 import Schools from './pages/Schools';
+import FloatingChatbot from './components/FloatingChatbot';
 import './index.css';
 
 function App() {
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/stem" element={<Stem />} />
-          <Route path="/academics" element={<Academics />} />
-          <Route path="/schools" element={<Schools />} />
-        </Routes>
-      </Layout>
+      <>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/stem" element={<Stem />} />
+            <Route path="/academics" element={<Academics />} />
+            <Route path="/schools" element={<Schools />} />
+          </Routes>
+        </Layout>
+        <FloatingChatbot />
+      </>
     </Router>
   );
 }
