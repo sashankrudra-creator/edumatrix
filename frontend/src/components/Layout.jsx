@@ -59,22 +59,17 @@ export default function Layout({ children }) {
   return (
     <>
       <header id="main-header" className={scrolled ? 'scrolled' : ''}>
-          <div className="container nav-container">
-              <div className="logo">
+          <div className="nav-container custom-nav-container">
+              <div className="logo brand-wrapper">
                   <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0px' }}>
-                      <img src="/logo.png" alt="E" style={{ height: '64px', marginRight: '-16px', marginTop: '-2px' }} />
-                      <span>DU<span>MATRIX</span></span>
+                      <img src="/edumatrixlogo.png" alt="Edumatrix Emblem" className="brand-emblem" />
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0px' }}>
+                          <img src="/logo.png" alt="E" className="brand-pencil" />
+                          <span className="brand-text">DU<span>MATRIX</span></span>
+                      </div>
                   </Link>
               </div>
               
-              <button 
-                className="mobile-menu-btn" 
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                aria-label="Toggle menu"
-              >
-                {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-              </button>
-
               <nav className={`nav-menu ${mobileMenuOpen ? 'open' : ''}`}>
                   <ul className="nav-links">
                       <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link></li>
@@ -82,16 +77,26 @@ export default function Layout({ children }) {
                       <li><Link to="/academics" className={location.pathname === '/academics' ? 'active' : ''}>Academics & Testing</Link></li>
                       <li><Link to="/schools" className={location.pathname === '/schools' ? 'active' : ''}>Institutional B2B</Link></li>
                   </ul>
-                  
+              </nav>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', zIndex: 1001 }}>
                   <button 
                     onClick={() => setIsDarkMode(!isDarkMode)} 
                     className="theme-toggle-btn"
                     aria-label="Toggle theme"
-                    style={{ background: 'transparent', border: 'none', color: 'var(--text-primary)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.5rem', borderRadius: '50%', marginLeft: '1rem' }}
+                    style={{ background: 'transparent', border: 'none', color: 'var(--text-primary)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.5rem', borderRadius: '50%' }}
                   >
                     {isDarkMode ? <Sun size={22} /> : <Moon size={22} />}
                   </button>
-              </nav>
+                  
+                  <button 
+                    className="mobile-menu-btn" 
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                    aria-label="Toggle menu"
+                  >
+                    {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                  </button>
+              </div>
           </div>
       </header>
 

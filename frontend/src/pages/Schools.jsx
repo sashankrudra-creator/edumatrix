@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Monitor, Users, Presentation, LayoutDashboard, Flag, ArrowRight, Building2, Briefcase, School, Library, GraduationCap, ClipboardCheck, Laptop, FolderOpen, Settings } from 'lucide-react';
 import { BlurText, FadeContent, ScaleIn } from '../components/Animations';
 import { Link } from 'react-router-dom';
+import CourseCard from '../components/CourseCard';
 
 export default function Schools() {
   useEffect(() => {
@@ -71,58 +72,58 @@ export default function Schools() {
 
               <div className="cards-grid">
                   <ScaleIn delay={0.1}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <LayoutDashboard size={24} />
-                      </div>
-                      <h3>School ERP (EliteSchool.info)</h3>
-                      <p>Complete management software covering admissions, fee collection, attendance, timetable, and parent communications.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={LayoutDashboard}
+                      title="School ERP (EliteSchool.info)"
+                      description="Complete management software covering admissions, fee collection, attendance, timetable, and parent communications."
+                      category="B2B Services"
+                      imageSrc="/images/EduMatrix Classroom ERP Dashboard.png"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.2}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Users size={24} />
-                      </div>
-                      <h3>Elite Jobs - Teacher Placement</h3>
-                      <p>Rigorous recruitment and training to supply schools with highly qualified, tech-savvy educators.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Users}
+                      title="Elite Jobs - Teacher Placement"
+                      description="Rigorous recruitment and training to supply schools with highly qualified, tech-savvy educators."
+                      category="B2B Services"
+                      imageSrc="/images/EduMatrix Teacher Placement Interview.png"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.3}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Monitor size={24} />
-                      </div>
-                      <h3>Smart Interactive Panels</h3>
-                      <p>Upgrading traditional classrooms with interactive touch panels, digital content integration, and teacher training.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Monitor}
+                      title="Smart Interactive Panels"
+                      description="Upgrading traditional classrooms with interactive touch panels, digital content integration, and teacher training."
+                      category="B2B Services"
+                      imageSrc="/images/Interactive Solar System Classroom.png"
+                      linkTo="#"
+                    />
                   </ScaleIn>
 
                   <ScaleIn delay={0.4}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Presentation size={24} />
-                      </div>
-                      <h3>Complete School Branding</h3>
-                      <p>Marketing, brand positioning, and digital presence management to increase admissions and prestige.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Presentation}
+                      title="Complete School Branding"
+                      description="Marketing, brand positioning, and digital presence management to increase admissions and prestige."
+                      category="B2B Services"
+                      imageSrc="/images/EduMatrix School Branding Strategy Meeting.png"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.5}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Flag size={24} />
-                      </div>
-                      <h3>Science Expos & Fests</h3>
-                      <p>Organizing district and state-level science fairs to showcase student talent and institutional capabilities.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Flag}
+                      title="Science Expos & Fests"
+                      description="Organizing district and state-level science fairs to showcase student talent and institutional capabilities."
+                      category="B2B Services"
+                      imageSrc="/images/EduMatrix Sustainable Science Fair.png"
+                      linkTo="#"
+                    />
                   </ScaleIn>
               </div>
           </div>

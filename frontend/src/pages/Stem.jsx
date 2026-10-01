@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Bot, Plane, Network, Telescope, Printer, Glasses, ArrowRight, Cpu, FlaskConical, Settings, Microscope, Atom, BrainCircuit, Rocket, Lightbulb, CircuitBoard } from 'lucide-react';
 import { BlurText, FadeContent, ScaleIn } from '../components/Animations';
 import { Link } from 'react-router-dom';
+import CourseCard from '../components/CourseCard';
 
 export default function Stem() {
   useEffect(() => {
@@ -65,69 +66,69 @@ export default function Stem() {
 
               <div className="cards-grid">
                   <ScaleIn delay={0.1}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Bot size={24} />
-                      </div>
-                      <h3>Robotics & Automation</h3>
-                      <p>Hands-on experience with building and programming autonomous systems and robotic arms.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Bot}
+                      title="Robotics & Automation"
+                      description="Hands-on experience with building and programming autonomous systems and robotic arms."
+                      category="STEM Lab"
+                      imageSrc="/images/stem_robotics.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.2}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Plane size={24} />
-                      </div>
-                      <h3>Avionics & Drone UAV</h3>
-                      <p>Learn aerodynamics, flight mechanics, and pilot skills with custom-built quadcopters.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Plane}
+                      title="Avionics & Drone UAV"
+                      description="Learn aerodynamics, flight mechanics, and pilot skills with custom-built quadcopters."
+                      category="STEM Lab"
+                      imageSrc="/images/stem_drone.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.3}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Network size={24} />
-                      </div>
-                      <h3>AI & Machine Learning</h3>
-                      <p>Introduction to neural networks, computer vision, and predictive modeling for high school students.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Network}
+                      title="AI & Machine Learning"
+                      description="Introduction to neural networks, computer vision, and predictive modeling for high school students."
+                      category="STEM Lab"
+                      imageSrc="/images/ai_ml.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
 
                   <ScaleIn delay={0.4}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Telescope size={24} />
-                      </div>
-                      <h3>Astrophysics & Astrolabs</h3>
-                      <p>Explore the cosmos with professional-grade telescopes and celestial mapping software.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Telescope}
+                      title="Astrophysics & Astrolabs"
+                      description="Explore the cosmos with professional-grade telescopes and celestial mapping software."
+                      category="STEM Lab"
+                      imageSrc="/images/stem_astrophysics.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.5}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Printer size={24} />
-                      </div>
-                      <h3>3D Printing</h3>
-                      <p>From CAD design to rapid prototyping using industry-standard additive manufacturing.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Printer}
+                      title="3D Printing"
+                      description="From CAD design to rapid prototyping using industry-standard additive manufacturing."
+                      category="STEM Lab"
+                      imageSrc="/images/EduMatrix 3D Printing Innovation Lab.png"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.6}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Glasses size={24} />
-                      </div>
-                      <h3>AR / VR Immersive Tech</h3>
-                      <p>Virtual field trips, simulated surgeries, and interactive physics experiments in the metaverse.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Glasses}
+                      title="AR / VR Immersive Tech"
+                      description="Virtual field trips, simulated surgeries, and interactive physics experiments in the metaverse."
+                      category="STEM Lab"
+                      imageSrc="/images/stem_arvr.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
               </div>
           </div>

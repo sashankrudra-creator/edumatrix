@@ -30,11 +30,10 @@ export default function EdumatrixSignature() {
     >
       <div className="edumatrix-signature-content">
         <img 
-          src="/logo.png" 
-          alt="" 
-          className="edumatrix-signature-logo" 
+          src="/edumatrixlogofooter.png" 
+          alt="Edumatrix" 
+          style={{ maxWidth: '100%', height: 'auto', maxHeight: '260px', objectFit: 'contain' }} 
         />
-        <span className="edumatrix-signature-text">DUMATRIX</span>
       </div>
     </div>
   );

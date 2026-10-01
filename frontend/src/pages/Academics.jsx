@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Target, BarChart2, Award, MessageSquare, Calculator, Users, Lightbulb, Gamepad2, ArrowRight, Trophy, GraduationCap, BookOpen, Pencil, CheckCircle, Star, ClipboardList, BarChart3, Medal, Sparkles } from 'lucide-react';
 import { BlurText, FadeContent, ScaleIn } from '../components/Animations';
 import { Link } from 'react-router-dom';
+import CourseCard from '../components/CourseCard';
 
 export default function Academics() {
   useEffect(() => {
@@ -65,91 +66,91 @@ export default function Academics() {
 
               <div className="cards-grid">
                   <ScaleIn delay={0.1}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Target size={24} />
-                      </div>
-                      <h3>IIT-JEE & NEET Foundation</h3>
-                      <p>Early-stage conceptual clarity designed to seamlessly bridge the gap between school curriculum and competitive entrances.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Target}
+                      title="IIT-JEE & NEET Foundation"
+                      description="Early-stage conceptual clarity designed to seamlessly bridge the gap between school curriculum and competitive entrances."
+                      category="Academics"
+                      imageSrc="/images/academics.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.2}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <BarChart2 size={24} />
-                      </div>
-                      <h3>Elite Scorer Diagnostics</h3>
-                      <p>AI-based mock tests that analyze individual weaknesses down to the topic level, providing actionable improvement graphs.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={BarChart2}
+                      title="Elite Scorer Diagnostics"
+                      description="AI-based mock tests that analyze individual weaknesses down to the topic level, providing actionable improvement graphs."
+                      category="Academics"
+                      imageSrc="/images/acad_diagnostics.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.3}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Award size={24} />
-                      </div>
-                      <h3>Advanced Olympiad Training</h3>
-                      <p>Specialized coaching for National and International Math, Physics, and Chemistry Olympiads.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Award}
+                      title="Advanced Olympiad Training"
+                      description="Specialized coaching for National and International Math, Physics, and Chemistry Olympiads."
+                      category="Academics"
+                      imageSrc="/images/acad_olympiad.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
 
                   <ScaleIn delay={0.4}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <MessageSquare size={24} />
-                      </div>
-                      <h3>Language Club & English Mastery</h3>
-                      <p>Comprehensive communication skills, public speaking, and vocabulary enhancement workshops.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={MessageSquare}
+                      title="Language Club & English Mastery"
+                      description="Comprehensive communication skills, public speaking, and vocabulary enhancement workshops."
+                      category="Academics"
+                      imageSrc="/images/acad_language.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.5}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Calculator size={24} />
-                      </div>
-                      <h3>Abacus & Vedic Math</h3>
-                      <p>Mental calculation techniques that increase brain capacity, speed, and numerical confidence.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Calculator}
+                      title="Abacus & Vedic Math"
+                      description="Mental calculation techniques that increase brain capacity, speed, and numerical confidence."
+                      category="Academics"
+                      imageSrc="/images/acad_abacus.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.6}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Users size={24} />
-                      </div>
-                      <h3>Psychological Counselling</h3>
-                      <p>Dedicated support to manage exam stress, guide career choices, and ensure mental well-being.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Users}
+                      title="Psychological Counselling"
+                      description="Dedicated support to manage exam stress, guide career choices, and ensure mental well-being."
+                      category="Academics"
+                      imageSrc="/images/acad_counselling.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
 
                   <ScaleIn delay={0.7}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Gamepad2 size={24} />
-                      </div>
-                      <h3>Gamified Learning</h3>
-                      <p>Interactive, game-based educational modules that make complex concepts fun and engaging.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Gamepad2}
+                      title="Gamified Learning"
+                      description="Interactive, game-based educational modules that make complex concepts fun and engaging."
+                      category="Academics"
+                      imageSrc="/images/acad_gamified.jpg"
+                      linkTo="#"
+                    />
                   </ScaleIn>
                   
                   <ScaleIn delay={0.8}>
-                  <article className="card">
-                      <div className="card-icon">
-                          <Lightbulb size={24} />
-                      </div>
-                      <h3>Entrepreneurship</h3>
-                      <p>Fostering leadership, business acumen, and startup thinking among young innovators.</p>
-                      <Link to="#" className="card-link">Explore <ArrowRight size={16} /></Link>
-                  </article>
+                  <CourseCard
+                      icon={Lightbulb}
+                      title="Entrepreneurship"
+                      description="Fostering leadership, business acumen, and startup thinking among young innovators."
+                      category="Academics"
+                      imageSrc="/images/EduMatrix Entrepreneurship Innovation Hub.png"
+                      linkTo="#"
+                    />
                   </ScaleIn>
               </div>
           </div>
